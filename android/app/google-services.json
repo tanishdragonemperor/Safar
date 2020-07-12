@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "213606673505",
+    "firebase_url": "https://geofencing-2020.firebaseio.com",
+    "project_id": "geofencing-2020",
+    "storage_bucket": "geofencing-2020.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:213606673505:android:e82956516012382c984e20",
+        "android_client_info": {
+          "package_name": "com.example.niitgeofence"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "213606673505-v1vqdh4drs075p6burg6r6tr57ibq975.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwKFXfVCo92UStGlQwSD7rSjEbeh77MxA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "213606673505-v1vqdh4drs075p6burg6r6tr57ibq975.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:213606673505:android:162f4823e8a4ad11984e20",
+        "android_client_info": {
+          "package_name": "com.retroportalstudio.www.flutter_maps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "213606673505-btloqjfqs5hhr18chuu1ga1v9fl175sl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.retroportalstudio.www.flutter_maps",
+            "certificate_hash": "3b5d119a8cc3c016fe09ff6d7c189c683b62876a"
+          }
+        },
+        {
+          "client_id": "213606673505-v1vqdh4drs075p6burg6r6tr57ibq975.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwKFXfVCo92UStGlQwSD7rSjEbeh77MxA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "213606673505-v1vqdh4drs075p6burg6r6tr57ibq975.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
