@@ -8,11 +8,11 @@ import 'package:flutter/services.dart';
 import 'package:geo_firestore/geo_firestore.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:location/location.dart';
-import 'package:niitgeofence/SanjayLocation1.dart';
-import 'package:niitgeofence/SanjayLocation2.dart';
+import 'package:niitgeofence/place1.dart';
 import 'package:niitgeofence/place2.dart';
 import 'package:niitgeofence/place3.dart';
 import 'package:niitgeofence/place4.dart';
+import 'package:niitgeofence/qutab.dart';
 
 class MapsPage extends StatefulWidget {
   MapsPage({Key key, this.title}) : super(key: key);
@@ -37,10 +37,8 @@ class _MapsPageState extends State<MapsPage> {
   GeoPoint currentLocation;
 
   List<GeoPoint> geoPoints = [
-//    GeoPoint(28.631708, 77.275268),
-//    GeoPoint(28.5245, 77.1855),
-    GeoPoint(19.975357, 73.855815),
-    GeoPoint(28.631708, 77.275268),
+    GeoPoint(28.524427, 77.185523),
+    GeoPoint(28.525171, 77.184585),
     GeoPoint(28.523919, 77.184622),
     GeoPoint(28.524783, 77.185147),
     GeoPoint(28.525743, 77.185361)
@@ -150,20 +148,18 @@ class _MapsPageState extends State<MapsPage> {
 
 // creates a new query around [37.7832, -122.4056] with a radius of 0.6 kilometers
     final List<DocumentSnapshot> documents =
-        await geoFirestore.getAtLocation(queryLocation, 0.180);
+        await geoFirestore.getAtLocation(queryLocation, 0.02);
     documents.forEach((document) {
       print(document.data);
       if (document.documentID == "q0") {
 //        Navigator.push(context, MaterialPageRoute(builder: (context) {
 //          return QutabMinarPage();
         Navigator.push(context, MaterialPageRoute(builder: (context) {
-          return PocketE();
+          return QutabMinarPage();
         }));
       } else if (document.documentID == "q1") {
-//        Navigator.push(context, MaterialPageRoute(builder: (context) {
-//          return Iltumbish();
         Navigator.push(context, MaterialPageRoute(builder: (context) {
-          return PocketD();
+          return Iltumbish();
         }));
       } else if (document.documentID == "q2") {
         Navigator.push(context, MaterialPageRoute(builder: (context) {

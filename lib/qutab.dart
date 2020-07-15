@@ -1,6 +1,21 @@
+import 'package:audioplayers/audio_cache.dart';
 import 'package:flutter/material.dart';
 
-class QutabMinarPage extends StatelessWidget {
+class QutabMinarPage extends StatefulWidget {
+  @override
+  _QutabMinarPageState createState() => _QutabMinarPageState();
+}
+
+class _QutabMinarPageState extends State<QutabMinarPage> {
+  static AudioCache player = AudioCache();
+//  AudioPlayer audioPlayer = AudioPlayer();
+//  AudioPlayer advancedPlayer;
+  @override
+  void initState() {
+    super.initState();
+    player.play('d.mp3');
+  }
+
   @override
   Widget build(BuildContext context) {
     var width = MediaQuery.of(context).size.width;
